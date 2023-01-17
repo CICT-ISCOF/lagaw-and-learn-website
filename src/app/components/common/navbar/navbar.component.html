@@ -1,1 +1,46 @@
-<p>navbar works!</p>
+<div class="flex items-center w-full bg-white">
+    <div class="flex items-center w-full max-w-screen-xl p-3 mx-auto">
+        <div class="flex items-center">
+            <img
+                role="button"
+                (click)="redirect('https://ched.gov.ph/')"
+                class="object-contain h-[50px] mx-2"
+                src="../../../../assets/app/ched.gif"
+                alt=""
+            />
+
+            <img
+                role="button"
+                (click)="redirect('https://iscof.edu.ph/')"
+                class="object-contain h-[50px] mx-2"
+                src="../../../../assets/app/iscof-logo.gif"
+                alt=""
+            />
+
+            <img
+                role="button"
+                routerLink="/"
+                class="object-contain h-[50px] mx-2"
+                src="../../../../assets/app/logo.jpeg"
+                alt=""
+            />
+        </div>
+
+        <ul class="flex items-center ml-auto">
+            <li
+                [ngClass]="{
+                    'pointer-events-none text-white bg-brand-sky':
+                        currentNav === nav,
+                    'hover:bg-brand-sky/10': currentNav !== nav
+                }"
+                (click)="currentNav = nav"
+                role="button"
+                [routerLink]="nav.link"
+                class="px-5 py-2 mx-2 rounded-md"
+                *ngFor="let nav of NAVBAR_NAVIGATION; trackBy: trackByFn"
+            >
+                {{ nav.title }}
+            </li>
+        </ul>
+    </div>
+</div>

@@ -11,31 +11,23 @@ import {mockApiServices} from 'app/mock-api'
 import {LayoutModule} from 'app/layout/layout.module'
 import {AppComponent} from 'app/app.component'
 import {appRoutes} from 'app/app.routing'
-import {NavbarComponent} from './components/common/navbar/navbar.component'
-import {NavbarResponsiveComponent} from './components/common/navbar-responsive/navbar-responsive.component'
-import {FooterComponent} from './components/common/footer/footer.component'
-import {CommonSidebarComponent} from './components/common/common-sidebar/common-sidebar.component'
 import {StoreModule} from '@ngrx/store'
 import {StoreDevtoolsModule} from '@ngrx/store-devtools'
 import {EffectsModule} from '@ngrx/effects'
+import {SharedModule} from './shared/shared.module'
 
 const routerConfig: ExtraOptions = {
     preloadingStrategy: PreloadAllModules,
     scrollPositionRestoration: 'enabled',
 }
 
-const components = [
-    AppComponent,
-    NavbarComponent,
-    NavbarResponsiveComponent,
-    FooterComponent,
-    CommonSidebarComponent,
-]
+const components = [AppComponent]
 
 const modules = [
     CoreModule,
     FuseModule,
     LayoutModule,
+    SharedModule,
     BrowserModule,
     BrowserAnimationsModule,
     EffectsModule.forRoot([]),

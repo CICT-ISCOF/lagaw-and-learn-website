@@ -1,1 +1,29 @@
-<router-outlet></router-outlet>
+<div style="z-index: 9999999999999999999" class="fixed bottom-0">
+    <alert-component
+        role="button"
+        [alert]="alert"
+        (click)="removeAlert(alert.id)"
+        *ngFor="let alert of alerts$ | async; trackBy: trackByFn"
+    ></alert-component>
+</div>
+
+<div class="flex flex-col w-full">
+    <ng-container *ngIf="breakpoint$ | async as breakpoint">
+        <navbar
+            *ngIf="
+                breakpoint === 'laptop' ||
+                breakpoint === 'tablet' ||
+                breakpoint === 'desktop' ||
+                breakpoint === 'max'
+            "
+        ></navbar>
+
+        <app-responsive-navbar
+            *ngIf="breakpoint === 'phone'"
+        ></app-responsive-navbar>
+    </ng-container>
+
+    <router-outlet></router-outlet>
+
+    <footer class="w-full"></footer>
+</div>
