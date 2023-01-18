@@ -1,1 +1,130 @@
-<p>footer works!</p>
+<div
+    class="flex items-center justify-center w-full py-10 mt-20 bg-brand-yellow"
+>
+    <div class="grid items-center w-full px-5 md:grid-cols-3 max-w-screens-md">
+        <div class="flex items-center">
+            <img
+                role="button"
+                (click)="redirect('https://ched.gov.ph/')"
+                class="object-contain h-[80px] mx-2"
+                src="../../../../assets/app/ched.gif"
+                alt=""
+            />
+
+            <img
+                role="button"
+                (click)="redirect('https://iscof.edu.ph/')"
+                class="object-contain h-[80px] mx-2"
+                src="../../../../assets/app/iscof-logo.gif"
+                alt=""
+            />
+
+            <img
+                role="button"
+                routerLink="/"
+                class="object-contain h-[80px] mx-2"
+                src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.15752-9/280770316_394904089213981_640261976754021265_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cS0B93uRlnIAX_VOU0k&_nc_ht=scontent.fmnl8-3.fna&oh=03_AdRR3qk5AyClyKyfKv7E5ZUb53S8-24GQyk2ZnMs0m5fGw&oe=63EDB109"
+                alt=""
+            />
+        </div>
+
+        <ul class="flex-col font-bold text-white md:flex">
+            <li
+                role="button"
+                routerLink="/pages/terms-and-conditions"
+                class="px-3 md:hover:underline"
+            >
+                Home
+            </li>
+
+            <li
+                role="button"
+                routerLink="/pages/privacy-policy"
+                class="px-3 md:hover:underline"
+            >
+                About us
+            </li>
+
+            <li
+                role="button"
+                routerLink="/pages/terms-of-service"
+                class="px-3 md:hover:underline"
+            >
+                Project Components
+            </li>
+
+            <li
+                role="button"
+                routerLink="/pages/terms-of-service"
+                class="px-3 md:hover:underline"
+            >
+                News & Updates
+            </li>
+
+            <li
+                role="button"
+                routerLink="/pages/terms-of-service"
+                class="px-3 md:hover:underline"
+            >
+                Contact Us
+            </li>
+        </ul>
+
+        <ul class="flex-col font-bold text-white md:flex">
+            <li
+                role="button"
+                routerLink="/pages/terms-and-conditions"
+                class="px-3 md:hover:underline"
+            >
+                Terms & Conditions
+            </li>
+
+            <li
+                role="button"
+                routerLink="/pages/privacy-policy"
+                class="px-3 md:hover:underline"
+            >
+                Privacy Policy
+            </li>
+
+            <li
+                role="button"
+                routerLink="/pages/terms-of-service"
+                class="px-3 md:hover:underline"
+            >
+                Terms of Service
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="flex items-center p-5 bg-brand-blue">
+    <ul class="flex items-center justify-center mt-10 ml-5 text-white md:mt-0">
+        <li class="mx-2">
+            <button matTooltip="Instagram" class="rounded-full" mat-icon-button>
+                <mat-icon
+                    style="color: white !important; fill: white !important"
+                    svgIcon="feather:instagram"
+                ></mat-icon>
+            </button>
+        </li>
+
+        <li class="mx-2">
+            <button matTooltip="Facebook" class="rounded-full" mat-icon-button>
+                <i class="text-3xl bi bi-facebook"></i>
+            </button>
+        </li>
+
+        <li class="mx-2">
+            <button matTooltip="WhatsApp" class="rounded-full" mat-icon-button>
+                <i class="text-3xl bi bi-whatsapp"></i>
+            </button>
+        </li>
+
+        <li class="mx-2">
+            <button matTooltip="Youtube" class="rounded-full" mat-icon-button>
+                <i class="text-3xl bi bi-youtube"></i>
+            </button>
+        </li>
+    </ul>
+</div>
