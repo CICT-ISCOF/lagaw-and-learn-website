@@ -1,26 +1,64 @@
-<div class="w-full h-[100vh] flex items-center relative">
-    <div class="absolute z-0 w-full h-full bg-black/80"></div>
+<div class="w-full h-[90vh] flex items-center relative">
+    <div class="absolute z-0 w-full h-full bg-black/50"></div>
 
     <ng-container *ngFor="let image of HOME_SLIDERS; trackBy: trackByFn">
         <img
-            @slideInLeft
+            @fadeIn
             *ngIf="image === currentSlide"
-            class="absolute w-full h-full -z-1"
+            class="absolute object-none w-full h-full -z-1 md:object-cover"
             [src]="image"
             alt=""
         />
     </ng-container>
 
+    <div class="absolute flex items-center justify-center w-full bottom-10">
+        <div
+            role="button"
+            (click)="currentSlide = image"
+            [ngClass]="{'opacity-50': currentSlide !== image}"
+            *ngFor="let image of HOME_SLIDERS; hOME_SLIDERS"
+            class="h-[5px] rounded-full bg-white w-[40px] active:opacity-20 mx-1 drop-shadow-lg"
+        ></div>
+    </div>
+
     <div
-        class="relative flex flex-col items-center justify-center w-full text-center text-white z-1"
+        class="relative flex flex-col items-center justify-center w-full text-center text-white z-1 -translate-y-[10vh] drop-shadow-2xl"
     >
-        <div class="font-black text-8xl">Welcome to</div>
-        <div class="text-4xl font-medium">Lagaw & Learn @ ISUFST</div>
+        <div class="text-3xl font-medium md:text-8xl text-shadow">
+            Welcome to
+        </div>
+        <div class="font-black md:text-4xl text-shadow">
+            Lagaw & Learn @ ISUFST
+        </div>
 
         <button
-            class="px-10 py-3 mt-8 text-4xl font-bold rounded-md bg-brand-orange drop-shadow-2xl"
+            class="px-5 py-2 relative z-[9999] mt-8 md:mt-16 font-bold rounded-md md:px-10 md:py-3 md:text-4xl bg-brand-orange drop-shadow-2xl"
         >
             Enroll Now!
         </button>
+
+        <div class="absolute z-[9990] w-full h-full flex items-center px-3">
+            <button
+                (click)="slide('left')"
+                mat-icon-button
+                class="bg-white drop-shadow-xl active:opacity-20"
+            >
+                <mat-icon
+                    class="text-black"
+                    svgIcon="heroicons_outline:chevron-left"
+                ></mat-icon>
+            </button>
+
+            <button
+                (click)="slide('right')"
+                mat-icon-button
+                class="ml-auto bg-white drop-shadow-xl active:opacity-20"
+            >
+                <mat-icon
+                    class="text-black"
+                    svgIcon="heroicons_outline:chevron-right"
+                ></mat-icon>
+            </button>
+        </div>
     </div>
 </div>

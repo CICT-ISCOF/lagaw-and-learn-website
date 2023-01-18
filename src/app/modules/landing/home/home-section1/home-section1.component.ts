@@ -13,14 +13,14 @@ export class HomeSection1Component {
 
     readonly HOME_SLIDERS = HOME_SLIDERS
 
-    currentSlide: string = HOME_SLIDERS[0]
+    currentSlide: string = HOME_SLIDERS[2]
 
     slideInterval: any
 
     ngOnInit(): void {
         this.slideInterval = setInterval(() => {
             this.slide()
-        }, 2000)
+        }, 5000)
     }
 
     ngOnDestroy(): void {

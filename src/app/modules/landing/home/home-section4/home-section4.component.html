@@ -1,1 +1,24 @@
-<p>home-section4 works!</p>
+<div class="flex flex-col items-center justify-center py-20 text-center">
+    <div class="text-3xl font-semibold text-center">
+        Frequently Asked Questions
+    </div>
+
+    <div class="w-full max-w-screen-lg mx-auto">
+        <div
+            *ngFor="
+                let item of [1, 2, 3, 4, 5, 6, 7, 7];
+                trackBy: trackByFn;
+                let i = index
+            "
+            class="flex items-center w-full px-2 py-3 border-b border-b-gray-200"
+        >
+            <div>Question {{ i + 1 }}</div>
+
+            <div class="ml-auto">
+                <button class="active:opacity-20" mat-icon-button>
+                    <mat-icon svgIcon="feather:chevron-down"></mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,24 @@
-<p>home-section3 works!</p>
+<div class="flex flex-col items-center justify-center py-20 text-center">
+    <div class="text-3xl font-semibold text-center">Explore</div>
+
+    <div class="text-lg font-light text-gray-500 max-w-[500px] w-full">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, optio
+        sequi soluta quae placeat molestiae vitae esse culpa nemo explicabo
+        animi repellendus quo rem alias repellat deleniti quia harum dicta.
+    </div>
+
+    <div
+        class="grid w-full max-w-screen-lg mx-auto mt-10 md:grid-cols-3 gap-x-15"
+    >
+        <div
+            *ngFor="let item of [1, 2, 3]"
+            class="drop-shadow bg-white rounded-md h-[60vh] flex flex-col text-center justify-center items-center"
+        >
+            <img
+                class="object-cover h-full"
+                src="../../../../../assets/app/home/1.jpg"
+                alt=""
+            />
+        </div>
+    </div>
+</div>

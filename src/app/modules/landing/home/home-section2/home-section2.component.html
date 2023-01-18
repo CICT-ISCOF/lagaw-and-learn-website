@@ -1,1 +1,25 @@
-<p>home-section2 works!</p>
+<div class="flex flex-col items-center justify-center py-20">
+    <div class="text-3xl font-semibold text-center">Program Components</div>
+
+    <div class="text-lg font-light text-gray-500">
+        The program has three (3) components: component.
+    </div>
+
+    <div
+        class="grid w-full max-w-screen-lg mx-auto mt-10 md:grid-cols-3 gap-x-15"
+    >
+        <div
+            *ngFor="let item of [1, 2, 3]"
+            class="drop-shadow bg-white rounded-md h-[50vh] flex flex-col text-center justify-center items-center p-5"
+        >
+            <div class="text-3xl font-black">Title</div>
+
+            <div class="text-lg font-light text-gray-500">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quibusdam ipsum, voluptatum quae ratione maxime iste fugit et
+                modi ad reiciendis voluptatibus? Ducimus quia tempore soluta eum
+                et laudantium fugiat voluptatibus!
+            </div>
+        </div>
+    </div>
+</div>
