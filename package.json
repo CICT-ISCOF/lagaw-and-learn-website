@@ -29,6 +29,7 @@
     "@ngrx/entity": "^15.1.0",
     "@ngrx/store": "^15.1.0",
     "@ngrx/store-devtools": "^15.1.0",
+    "aos": "^2.3.4",
     "apexcharts": "3.36.3",
     "crypto-js": "3.3.0",
     "dayjs": "^1.11.7",

@@ -1,5 +1,13 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from 'app/app.module';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic'
+import {AppModule} from 'app/app.module'
+import * as AOS from 'aos'
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-                        .catch(err => console.error(err));
+AOS.init({
+    duration: 250,
+    easing: 'ease-out-quart',
+    placement: 'bottom-bottom',
+    delay: 100,
+})
+platformBrowserDynamic()
+    .bootstrapModule(AppModule)
+    .catch((err) => console.error(err))
