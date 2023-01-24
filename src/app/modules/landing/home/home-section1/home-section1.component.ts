@@ -13,7 +13,7 @@ export class HomeSection1Component {
 
     readonly HOME_SLIDERS = HOME_SLIDERS
 
-    currentSlide: string = HOME_SLIDERS[2]
+    currentSlide: string = HOME_SLIDERS[0]
 
     slideInterval: any
 
