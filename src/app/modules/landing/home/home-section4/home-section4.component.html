@@ -11,20 +11,31 @@
         <div
             data-aos="fade-up"
             [attr.data-aos-duration]="450 * i"
+            (click)="currentIndex===i? currentIndex=100: currentIndex=i"
             *ngFor="
-                let item of [1, 2, 3, 4, 5, 6, 7, 7];
+                let item of faqs;
                 trackBy: trackByFn;
                 let i = index
             "
-            class="flex items-center w-full px-2 py-3 border-b border-b-gray-200"
-        >
-            <div>Question {{ i + 1 }}</div>
-
-            <div class="ml-auto">
-                <button class="active:opacity-20" mat-icon-button>
-                    <mat-icon svgIcon="feather:chevron-down"></mat-icon>
-                </button>
+            class="flex items-right w-full px-2 py-3 border-b border-b-gray-200 flex-col"
+        >   <div class="flex items-center"> 
+                <div>{{item.title}}</div>
+                <div class="ml-auto">
+                    <button class="active:opacity-20" mat-icon-button>
+                        <mat-icon [svgIcon]="currentIndex===i?'feather:chevron-right':'feather:chevron-down'"></mat-icon>
+                    </button>
+                </div>
             </div>
+           
+            <div *ngFor="
+            let item of item.questions;
+            trackBy: trackByFn;
+            let j = index
+            ">
+            <div *ngIf="currentIndex===i">{{item}}</div>
+            </div>
+
+            
         </div>
     </div>
 </div>
