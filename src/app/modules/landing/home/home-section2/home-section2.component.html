@@ -1,30 +1,45 @@
-<div class="flex flex-col items-center justify-center py-20">
+<div class="flex flex-col items-center py-20 bg-brand-sky/10">
     <div class="text-3xl font-semibold text-center">Program Components</div>
 
-    <div
-              data-aos="fade-up"
-        data-aos-duration="150"
-        class="text-lg font-light text-gray-500"
-    >
-        The program has three (3) components: component.
+    <div class="text-lg font-light text-center text-gray-500">
+        Discover the Key Elements of our Program: An Overview of ({{
+            PROJECT_COMPONENTS.length
+        }}) Program Components
     </div>
 
     <div
-        class="grid w-full max-w-screen-lg mx-auto mt-10 md:grid-cols-3 gap-x-15"
+        class="grid w-full max-w-screen-xl mx-auto mt-10 md:grid-cols-2 gap-15"
     >
         <div
-            data-aos="zoom-in-down"
-            data-aos-duration="450"
-            *ngFor="let item of [1, 2, 3]"
-            class="drop-shadow bg-white rounded-md h-[50vh] flex flex-col text-center justify-center items-center p-5"
+            role="button"
+            *ngFor="let project of PROJECT_COMPONENTS"
+            [routerLink]="'/project-components/' + project.id"
+            class="shadow-2xl shadow-brand-sky/40 bg-white rounded-2xl min-h-[50vh] flex flex-col p-5"
         >
-            <div class="text-3xl font-black">Title</div>
+            <video
+                muted
+                loop
+                autoplay
+                *ngIf="project.video"
+                class="w-full h-[400px] bg-black"
+            >
+                <source [src]="project.video" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
 
-            <div class="text-lg font-light text-gray-500">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Quibusdam ipsum, voluptatum quae ratione maxime iste fugit et
-                modi ad reiciendis voluptatibus? Ducimus quia tempore soluta eum
-                et laudantium fugiat voluptatibus!
+            <img
+                *ngIf="project.image"
+                class="w-full h-[400px] object-cover rounded-xl"
+                [src]="project.image"
+                alt=""
+            />
+
+            <div class="my-4 text-3xl font-bold text-left">
+                {{ project.title }}
+            </div>
+
+            <div class="mt-4 text-lg font-light text-left text-gray-500">
+                {{ project.description }}
             </div>
         </div>
     </div>
