@@ -44,7 +44,14 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                     id: '4',
                     title: 'Smoked Bangus (Marinated and Plain)',
                     images: [
-                        'https://drive.google.com/uc?export=view&id=1UiGmss9RDlDSfr3lBGbISG96fNvQbscP',
+                        'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
+                        'https://drive.google.com/uc?export=view&id=1OUbGt668HuzdtH3ZE0G2gc9BWBiUvagS',
+                        'https://drive.google.com/uc?export=view&id=1DSGPdqS13SbvBjo6-RyId5bsN6Y4WDVR',
+                        'https://drive.google.com/uc?export=view&id=1gV4Uhhh69TduGKvgXBfL3cAURV-VOkJ1',
+                        'https://drive.google.com/uc?export=view&id=1oXb8UMOs-Tpf6pErecjiD_7pQNnpMQmT',
+                        'https://drive.google.com/uc?export=view&id=1UqoWgWvhSV5VP6zgMA580uCFSNuzdE_G',
+                        'https://drive.google.com/uc?export=view&id=1LL9DqweBoabu7xywU2vBSdkVHXlUSsAV',
+'',
                     ],
                     description:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
