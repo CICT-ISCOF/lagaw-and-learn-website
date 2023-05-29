@@ -34,7 +34,7 @@
                     <img
                         *ngIf="i < 4"
                         class="w-full h-[150px] object-cover"
-                        [src]="item.images[0]"
+                        [src]="item.images[0] | drive_link"
                         alt=""
                     />
                 </ng-container>

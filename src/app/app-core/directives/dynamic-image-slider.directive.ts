@@ -5,6 +5,7 @@ import {
     OnChanges,
     SimpleChanges,
 } from '@angular/core'
+import {drive_link} from '../pipes/drive-link.pipe'
 
 @Directive({
     selector: '[imageSlider]',
@@ -22,7 +23,7 @@ export class ImageSliderDirective {
     ngAfterViewInit(): void {
         console.log(this.currentImageIndex)
         this.interval = setInterval(() => {
-            const currentImage = this.images[this.currentImageIndex]
+            const currentImage = drive_link(this.images[this.currentImageIndex])
             this.el.nativeElement.setAttribute('src', currentImage)
             this.currentImageIndex =
                 this.currentImageIndex === this.images.length - 1

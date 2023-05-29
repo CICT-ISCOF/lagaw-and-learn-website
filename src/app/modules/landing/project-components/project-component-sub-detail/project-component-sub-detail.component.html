@@ -23,21 +23,18 @@
             {{ projectSubComponentComponent.title }} Images
         </div>
 
-        <div class="grid grid-cols-3 gap-5">
+        <div class="grid grid-cols-4 gap-5">
             <div
                 role="button"
                 (click)="openViewer(image)"
-                class="p-5 bg-white rounded-lg shadow-2xl shadow-brand-sky/40"
+                class="overflow-hidden bg-white rounded-lg shadow-2xl shadow-brand-sky/40"
                 *ngFor="let image of projectSubComponentComponent.images"
             >
-                <img class="w-full h-[250px] rounded-md" [src]="image" alt="" />
-
-                <div class="mt-2">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Tempora optio ipsam id, commodi, eos asperiores cupiditate
-                    dicta qui totam velit laborum. Culpa odit recusandae
-                    adipisci unde non. Vel, corporis accusamus.
-                </div>
+                <img
+                    class="w-full h-[250px] rounded-md"
+                    [src]="image | drive_link"
+                    alt=""
+                />
             </div>
         </div>
     </div>
