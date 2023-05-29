@@ -7,35 +7,40 @@
         Frequently Asked Questions
     </div>
 
-    <div class="w-full max-w-screen-lg mx-auto">
+    <div class="w-full max-w-screen-lg px-5 mx-auto">
         <div
             data-aos="fade-up"
             [attr.data-aos-duration]="450 * i"
-            (click)="currentIndex===i? currentIndex=100: currentIndex=i"
-            *ngFor="
-                let item of faqs;
-                trackBy: trackByFn;
-                let i = index
+            (click)="
+                currentIndex === i ? (currentIndex = 100) : (currentIndex = i)
             "
-            class="flex items-right w-full px-2 py-3 border-b border-b-gray-200 flex-col"
-        >   <div class="flex items-center"> 
-                <div>{{item.title}}</div>
+            *ngFor="let item of faqs; trackBy: trackByFn; let i = index"
+            class="flex flex-col w-full px-2 py-3 border-b items-right border-b-gray-200"
+        >
+            <div class="flex items-center">
+                <div>{{ item.title }}</div>
                 <div class="ml-auto">
                     <button class="active:opacity-20" mat-icon-button>
-                        <mat-icon [svgIcon]="currentIndex===i?'feather:chevron-right':'feather:chevron-down'"></mat-icon>
+                        <mat-icon
+                            [svgIcon]="
+                                currentIndex === i
+                                    ? 'feather:chevron-right'
+                                    : 'feather:chevron-down'
+                            "
+                        ></mat-icon>
                     </button>
                 </div>
             </div>
-           
-            <div *ngFor="
-            let item of item.questions;
-            trackBy: trackByFn;
-            let j = index
-            ">
-            <div *ngIf="currentIndex===i">{{item}}</div>
-            </div>
 
-            
+            <div
+                *ngFor="
+                    let item of item.questions;
+                    trackBy: trackByFn;
+                    let j = index
+                "
+            >
+                <div *ngIf="currentIndex === i">{{ item }}</div>
+            </div>
         </div>
     </div>
 </div>

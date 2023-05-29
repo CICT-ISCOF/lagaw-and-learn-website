@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center justify-center py-20 bg-brand-sky/10">
+<div class="flex flex-col items-center justify-center py-20 md:bg-brand-sky/10">
     <div class="text-3xl font-semibold text-center">Program Components</div>
 
     <div class="text-lg font-light text-gray-500">
@@ -6,13 +6,13 @@
     </div>
 
     <div
-        class="grid w-full max-w-screen-xl mx-auto mt-10 md:grid-cols-2 gap-15"
+        class="grid w-full max-w-screen-xl mx-auto mt-10 md:grid-cols-2 md:gap-15"
     >
         <div
             role="button"
             *ngFor="let project of PROJECT_COMPONENTS; let j = index"
             [routerLink]="'/project-components/' + project.id"
-            class="shadow-2xl shadow-brand-sky/40 bg-white rounded-2xl min-h-[50vh] flex flex-col p-5 md:hover:shadow-brand-sky/60"
+            class="md:shadow-2xl md:shadow-brand-sky/40 bg-white md:rounded-2xl min-h-[50vh] flex flex-col p-5 md:hover:shadow-brand-sky/60 border-b md:border-b-0 border-gray-100"
         >
             <video
                 muted
