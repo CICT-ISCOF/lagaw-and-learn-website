@@ -14,15 +14,14 @@
         <navbar
             *ngIf="
                 breakpoint === 'laptop' ||
-                breakpoint === 'tablet' ||
                 breakpoint === 'desktop' ||
                 breakpoint === 'max'
             "
         ></navbar>
 
-        <app-responsive-navbar
-            *ngIf="breakpoint === 'phone'"
-        ></app-responsive-navbar>
+        <navbar-responsive
+            *ngIf="breakpoint === 'tablet' || breakpoint === 'phone'"
+        ></navbar-responsive>
     </ng-container>
 
     <router-outlet></router-outlet>
