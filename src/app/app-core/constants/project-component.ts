@@ -1,6 +1,5 @@
 import {ProjectComponent} from '../models/project-component.model'
 
-
 export const PROJECT_COMPONENTS: ProjectComponent[] = [
     {
         id: '1',
@@ -13,40 +12,27 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
             //     'https://drive.google.com/uc?export=download&id=1Uz6R862hWGtPtTqM7gIt80IlWqJ_LhEA',
             items: [
                 {
+                    id: '1',
                     title: 'Boneless Bangus',
+                    video: 'https://rr5---sn-4wg7zne7.c.drive.google.com/videoplayback?expire=1685381461&ei=Fal0ZMqGKpr-hga41LWYCw&ip=91.73.81.203&cp=QVRNV0RfUFRUQlhPOjVWR2RuRTdEOGwyUUdMU1RiTGxLV0laSmFuX3Bvdk9xM0hKZGMxOF9BQ0M&id=f6d03591e03b9bf3&itag=37&source=webdrive&requiressl=yes&mh=qF&mm=32&mn=sn-4wg7zne7&ms=su&mv=m&mvi=5&pl=22&ttl=transient&susc=dr&driveid=1dGpZB3wx1wRDNTiezz8bW9ukTmWP8FzP&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=146.401&lmt=1684803375337108&mt=1685366679&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAKLiZbzWmFlknN7Tx5a-B_EuCCQ43AgaxOukfgCfnyRMAiEA8XOhl_VSB52dpT2LRDizgUbn0TNocfYWko0ndE-uKac=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAMD8nd994PmE8Dlm4Wk4X3PZyoAeDGYy5wLFhuE0n-1iAiEAtxvmCzw5W5rnsJmb10UIHZP51yhBuhMrBaTbKNx9qok=&cpn=cJAuQ0n7IMLu0xfi&c=WEB_EMBEDDED_PLAYER&cver=1.20230523.01.00',
                     images: [
                         'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
                         'https://drive.google.com/uc?export=view&id=1ZJGsM7bym-Uj_wvLfA0tCDadkgBJ0cHV',
-                        'https://drive.google.com/uc?export=view&id=1y708oJ7sB-e-zESZJBWctTtmiwnOj0qH',
-                        'https://drive.google.com/uc?export=view&id=1fsAMYFkl-e8_zloCuHRkGf9vjoL3j5Rl',
-                        'https://drive.google.com/uc?export=view&id=1kIGt_DqJIjAeGF52j6Wj2m8C6AG65IVl',
-                        'https://drive.google.com/uc?export=view&id=1TfjUU9AwRKnWhRNMcfmSZN3IpyQo0MEn',
-                        'https://drive.google.com/uc?export=view&id=1m97Ua0Ih0eGkT_OzLdQESH0OVV4TXpjc',
-                        
                     ],
                     description:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
-
+                    id: '2',
                     title: 'Boneless Kroepeck',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ',
-                        'https://drive.google.com/uc?export=view&id=18WGsGar0FMzpQ48ELA8P_hxOYADCGxWZ',
-                        'https://drive.google.com/uc?export=view&id=1ERyXUDMwMC91aWDlLQl_INmwHG57q57D',
-                        'https://drive.google.com/uc?export=view&id=1_A8Y4hF0lKiK36t6StMygBoL8FG75wAM',
-                        'https://drive.google.com/uc?export=view&id=1YVVJoKnnoR__JDjPFBR23cIgtNwOyKT2',
-                        'https://drive.google.com/uc?export=view&id=1b8Sh7zHb12wRJ8XLzGkXaPAkzq3nz-fQ',
-                        'https://drive.google.com/uc?export=view&id=1xo_sJ-7I-k24CPPmZq9q_3agFdA3h8Wh',
-                        'https://drive.google.com/uc?export=view&id=1-uq9qWqpuaXIROYZ2JpwD1yjtjrLHKYU',
-                        'https://drive.google.com/uc?export=view&id=1QGK0miNBlv4K169h7I5AoKaHrMUhe2D8',
-                        'https://drive.google.com/uc?export=view&id=1tGsV8TXK6dNC1bV_hkejO8cBAFEzC8hC',
-                        'https://drive.google.com/uc?export=view&id=1jmIhDmGPqEpSKC9sYN0TtJ98KByHPCLv',
                     ],
                     description:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '3',
                     title: 'Milkfish in Corn Oil',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
@@ -55,6 +41,7 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '4',
                     title: 'Smoked Bangus (Marinated and Plain)',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1UiGmss9RDlDSfr3lBGbISG96fNvQbscP',
@@ -76,16 +63,19 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
             //     'https://drive.google.com/uc?export=download&id=1Uz6R862hWGtPtTqM7gIt80IlWqJ_LhEA',
             items: [
                 {
+                    id: '1',
                     title: 'Pond Preparation',
                     images: [
                         'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
-                        
+                        'https://drive.google.com/uc?export=view&id=1h9NHMcMRtunWvRlwZ1hVPuzLlShfhgdZ',
+                        'https://drive.google.com/uc?export=view&id=1UGNbdIJJUmLrOMCyLaG2XmJpeDN055zY',
+                        'https://drive.google.com/uc?export=view&id=16Pms_Hhx1W-3j51OLNoMttKhPEKKdvcv',
                     ],
                     description:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
-
+                    id: '2',
                     title: 'Stocking',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ',
@@ -94,6 +84,7 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '3',
                     title: 'Transfer of Stock ( from Nursery Pond to Trasition Pond',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
@@ -115,16 +106,16 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
             //     'https://drive.google.com/uc?export=download&id=1Uz6R862hWGtPtTqM7gIt80IlWqJ_LhEA',
             items: [
                 {
+                    id: '1',
                     title: 'Boneless Bangus',
                     images: [
                         'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
-                        
                     ],
                     description:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
-
+                    id: '2',
                     title: 'Boneless Kroepeck',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ',
@@ -133,6 +124,7 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '3',
                     title: 'Milkfish in Corn Oil',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
@@ -141,6 +133,7 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '4',
                     title: 'Smoked Bangus (Marinated and Plain)',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1UiGmss9RDlDSfr3lBGbISG96fNvQbscP',
@@ -162,16 +155,16 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
             //     'https://drive.google.com/uc?export=download&id=1Uz6R862hWGtPtTqM7gIt80IlWqJ_LhEA',
             items: [
                 {
+                    id: '1',
                     title: 'Boneless Bangus',
                     images: [
                         'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
-                        
                     ],
                     description:
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
-
+                    id: '2',
                     title: 'Boneless Kroepeck',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ',
@@ -180,6 +173,7 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '3',
                     title: 'Milkfish in Corn Oil',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
@@ -188,6 +182,7 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
                 {
+                    id: '4',
                     title: 'Smoked Bangus (Marinated and Plain)',
                     images: [
                         'https://drive.google.com/uc?export=view&id=1UiGmss9RDlDSfr3lBGbISG96fNvQbscP',
@@ -196,7 +191,6 @@ export const PROJECT_COMPONENTS: ProjectComponent[] = [
                         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
                 },
             ],
-            
         },
     },
 ]

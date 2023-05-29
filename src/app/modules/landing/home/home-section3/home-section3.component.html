@@ -1,8 +1,10 @@
-<div class="flex flex-col items-center justify-center py-20 text-center">
+<div
+    class="flex flex-col items-center justify-center py-20 text-center bg-black"
+>
     <div
         data-aos="fade-up"
         data-aos-duration="150"
-        class="text-3xl font-semibold text-center"
+        class="text-3xl font-semibold text-center text-white"
     >
         Explore
     </div>
@@ -10,25 +12,57 @@
     <div
         data-aos="fade-up"
         data-aos-duration="450"
-        class="text-lg font-light text-gray-500 max-w-[500px] w-full"
+        class="text-lg font-light max-w-[500px] w-full text-white/50"
     >
         Dive into the Wonders of Fish Education: Explore the Fascinating World
         of Aquatic Life
     </div>
 
+    <div class="flex items-center">
+        <video class="mt-20 w-full h-[60vh] max-w-screen-lg mx-auto" controls>
+            <source
+                src="https://rr5---sn-4wg7zne7.c.drive.google.com/videoplayback?expire=1685381461&ei=Fal0ZMqGKpr-hga41LWYCw&ip=91.73.81.203&cp=QVRNV0RfUFRUQlhPOjVWR2RuRTdEOGwyUUdMU1RiTGxLV0laSmFuX3Bvdk9xM0hKZGMxOF9BQ0M&id=f6d03591e03b9bf3&itag=37&source=webdrive&requiressl=yes&mh=qF&mm=32&mn=sn-4wg7zne7&ms=su&mv=m&mvi=5&pl=22&ttl=transient&susc=dr&driveid=1dGpZB3wx1wRDNTiezz8bW9ukTmWP8FzP&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=146.401&lmt=1684803375337108&mt=1685366679&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAKLiZbzWmFlknN7Tx5a-B_EuCCQ43AgaxOukfgCfnyRMAiEA8XOhl_VSB52dpT2LRDizgUbn0TNocfYWko0ndE-uKac=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhAMD8nd994PmE8Dlm4Wk4X3PZyoAeDGYy5wLFhuE0n-1iAiEAtxvmCzw5W5rnsJmb10UIHZP51yhBuhMrBaTbKNx9qok=&cpn=cJAuQ0n7IMLu0xfi&c=WEB_EMBEDDED_PLAYER&cver=1.20230523.01.00"
+                type="video/mp4"
+            />
+        </video>
+    </div>
+
     <div
         data-aos="fade-up"
         data-aos-duration="850"
-        class="grid w-full max-w-screen-lg mx-auto mt-10 md:grid-cols-3 gap-x-15"
+        class="grid w-full max-w-screen-lg px-20 mx-auto mt-20 md:grid-cols-1 gap-y-15"
     >
         <div
-            *ngFor="let item of [1, 2, 3]"
-            class="drop-shadow bg-white rounded-md h-[60vh] flex flex-col text-center justify-center items-center"
+            class="drop-shadow-2xl bg-white rounded-md h-[60vh] flex flex-col text-center justify-center items-center py-5"
         >
             <img
+                role="button"
+                matTooltip="View Image"
+                (click)="
+                    openViewer(
+                        'https://drive.google.com/uc?export=view&id=1T3UsFvDZVjx2Lf5p5d87Zfvc3k3uer5y'
+                    )
+                "
                 class="object-cover h-full"
-                src="../../../../../assets/app/home/1.jpg"
-                alt=""
+                src="https://drive.google.com/uc?export=view&id=1T3UsFvDZVjx2Lf5p5d87Zfvc3k3uer5y"
+                alt="Image 1"
+            />
+        </div>
+
+        <div
+            class="drop-shadow-2xl bg-white rounded-md h-[60vh] flex flex-col text-center justify-center items-center py-5"
+        >
+            <img
+                role="button"
+                matTooltip="View Image"
+                (click)="
+                    openViewer(
+                        'https://drive.google.com/uc?export=view&id=1Zirp35EaMme3N6aL6-bOXBcNdwHLKzly'
+                    )
+                "
+                class="object-cover h-full"
+                src="https://drive.google.com/uc?export=view&id=1Zirp35EaMme3N6aL6-bOXBcNdwHLKzly"
+                alt="Image 2"
             />
         </div>
     </div>

@@ -10,6 +10,8 @@ export interface ProjectComponent {
 export interface Detail {
     videoTeaser?: string
     items: {
+        id: string
+        video?: string
         title?: string
         images?: string[]
         description?: string
