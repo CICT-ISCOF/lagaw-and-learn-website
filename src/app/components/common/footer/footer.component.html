@@ -98,33 +98,69 @@
     </div>
 </div>
 
-<div class="flex items-center p-5 bg-brand-blue">
-    <ul class="flex items-center justify-center mt-10 ml-5 text-white md:mt-0">
-        <li class="mx-2">
-            <button matTooltip="Instagram" class="rounded-full" mat-icon-button>
-                <mat-icon
-                    style="color: white !important; fill: white !important"
-                    svgIcon="feather:instagram"
-                ></mat-icon>
-            </button>
+<div class="flex items-start px-5 bg-brand-blue py-10">
+    <div class="flex flex-col">
+      <div class="text-white font-semibold mb-3 ml-5 ">Contact Information:</div>
+      <ul class="flex items-center text-white">
+        <li class="mx-2 mt-5">
+          <a href="https://maps.google.com/maps?q=Iscof%20Tiwi%20(Lagaw%20and%20Learn)" target="_blank" matTooltip="Google Map" class="rounded-full" mat-icon-button>
+            <i class="text-3xl bi bi-geo"></i>
+          </a>
+        </li>
+        <li class="mx-2 mt-5">
+          <a href="https://www.facebook.com/iscof.ekstensyonista" target="_blank" matTooltip="Facebook" class="rounded-full" mat-icon-button>
+            <i class="text-3xl bi bi-facebook"></i>
+          </a>
+        </li>
+        <li class="mx-2 mt-5">
+          <a href="https://twitter.com/EscdOfc" target="_blank" matTooltip="Twitter" class="rounded-full" mat-icon-button>
+            <i class="text-3xl bi bi-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="flex-col text-gray-400 md:flex px-100">
+        <li
+           
+            class="font-bold text-white text-2xl"
+        >
+            Other links:
         </li>
 
-        <li class="mx-2">
-            <button matTooltip="Facebook" class="rounded-full" mat-icon-button>
-                <i class="text-3xl bi bi-facebook"></i>
-            </button>
+        <li
+            role="button"
+            routerLink="/pages/la-guerta-de-iscof"
+            class="px-3 text-white md:hover:underline"
+        >
+            La Guerta de ISCOF
         </li>
 
-        <li class="mx-2">
-            <button matTooltip="WhatsApp" class="rounded-full" mat-icon-button>
-                <i class="text-3xl bi bi-whatsapp"></i>
-            </button>
+        <li
+    role="button"
+    routerLink="/pages/site-map"
+    class="px-3 text-white md:hover:underline"
+>
+    <a href="#" onclick="event.preventDefault()">Site Map</a>
+</li>
+
+
+        <li
+            role="button"
+            routerLink="/pages/enternal-campuses"
+            class="px-3 text-white md:hover:underline"
+        >
+            Enternal Campuses
         </li>
 
-        <li class="mx-2">
-            <button matTooltip="Youtube" class="rounded-full" mat-icon-button>
-                <i class="text-3xl bi bi-youtube"></i>
-            </button>
+        <li
+            role="button"
+            routerLink="/pages/program-offerings"
+            class="px-3 text-white md:hover:underline"
+        >
+            Program Offerings
         </li>
     </ul>
-</div>
+  </div>
+  
+  
