@@ -4,7 +4,7 @@
             <img
                 role="button"
                 (click)="redirect('https://ched.gov.ph/')"
-                class="object-contain h-[50px] mx-2"
+                class="object-contain h-[50px] mx-5"
                 src="../../../../assets/app/ched.gif"
                 alt=""
             />
@@ -12,7 +12,7 @@
             <img
                 role="button"
                 (click)="redirect('https://iscof.edu.ph/')"
-                class="object-contain h-[50px] mx-2"
+                class="object-contain h-[50px] mx-5"
                 src="https://iscof.edu.ph/wp-content/uploads/2023/04/isufstlogo.png"
                 alt=""
             />
@@ -20,8 +20,11 @@
             <img
                 role="button"
                 routerLink="/"
-                class="object-contain h-[50px] mx-2"
-                src="/assets/logo.jpeg"
+                class="object-contain h-[50px] mx-5 scale-[2.5] translate-y-1.5"
+                [src]="
+                    'https://drive.google.com/file/d/1P2LBVPEQnURQhwZASYdMwHhgjKTnl2jV/view?usp=share_link'
+                        | drive_link
+                "
                 alt=""
             />
         </div>

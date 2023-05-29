@@ -2,25 +2,24 @@
     *ngIf="projectSubComponentComponent"
     class="flex w-full py-20 bg-brand-sky/10"
 >
-    <div class="flex flex-col justify-center w-full max-w-screen-lg mx-auto">
-        <div class="my-4 text-3xl font-bold text-left">
-            {{ projectSubComponentComponent.title }} Video
-        </div>
+    <div class="flex flex-col w-full max-w-screen-lg mx-auto">
+        <ng-container *ngIf="projectSubComponentComponent.video">
+            <div class="text-3xl font-bold text-left">
+                Video of {{ projectSubComponentComponent.title }}
+            </div>
 
-        <div class="flex items-center">
-            <video
-                class="mt-4 w-full h-[60vh] max-w-screen-lg mx-auto"
-                controls
-            >
-                <source
-                    type="video/mp4"
-                    [src]="projectSubComponentComponent.video"
-                />
-            </video>
-        </div>
+            <div class="flex items-center bg-black">
+                <video class="w-full h-[60vh] max-w-screen-lg mx-auto" controls>
+                    <source
+                        type="video/mp4"
+                        [src]="projectSubComponentComponent.video | drive_link"
+                    />
+                </video>
+            </div>
+        </ng-container>
 
         <div class="my-4 mt-20 text-3xl font-bold text-left">
-            {{ projectSubComponentComponent.title }} Images
+            Images of {{ projectSubComponentComponent.title }}
         </div>
 
         <div class="grid grid-cols-4 gap-5">

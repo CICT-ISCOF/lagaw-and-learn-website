@@ -12,9 +12,9 @@
     >
         <div
             role="button"
-            *ngFor="let project of PROJECT_COMPONENTS"
+            *ngFor="let project of PROJECT_COMPONENTS; let j = index"
             [routerLink]="'/project-components/' + project.id"
-            class="shadow-2xl shadow-brand-sky/40 bg-white rounded-2xl min-h-[50vh] flex flex-col p-5"
+            class="shadow-2xl shadow-brand-sky/40 bg-white rounded-2xl min-h-[50vh] flex flex-col p-5 md:hover:shadow-brand-sky/60"
         >
             <video
                 muted
@@ -28,15 +28,37 @@
             </video>
 
             <div class="grid grid-cols-2 gap-3">
-                <ng-container
-                    *ngFor="let item of project.detail.items; let i = index"
-                >
-                    <img
-                        *ngIf="i < 4"
-                        class="w-full h-[150px] object-cover"
-                        [src]="item.images[0] | drive_link"
-                        alt=""
-                    />
+                <ng-container *ngIf="j !== 2">
+                    <ng-container
+                        *ngFor="let item of project.detail.items; let i = index"
+                    >
+                        <img
+                            [ngClass]="{
+                                'col-span-2': (j === 1 && i === 2) || j == 3,
+                                'h-[320px] ': j == 3
+                            }"
+                            *ngIf="i < 4"
+                            class="w-full h-[150px] object-cover"
+                            [src]="item.images[0] | drive_link"
+                            alt=""
+                        />
+                    </ng-container>
+                </ng-container>
+
+                <ng-container *ngIf="j === 2">
+                    <ng-container
+                        *ngFor="
+                            let image of project.detail.items[0].images;
+                            let i = index
+                        "
+                    >
+                        <img
+                            *ngIf="i < 4"
+                            class="w-full h-[150px] object-cover"
+                            [src]="image | drive_link"
+                            alt=""
+                        />
+                    </ng-container>
                 </ng-container>
             </div>
 

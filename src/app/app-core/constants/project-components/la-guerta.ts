@@ -3,41 +3,14 @@ export const LA_GUERTA = {
     title: 'La Guerta ',
     description:
         'Experience the Rich Bounty of Nature at La Guerta: A Sustainable Farming Destination Where You Can Connect with the Land, Learn about Organic and Regenerative Agriculture, and Savor the Fresh, Flavorful Produce Grown Right Here on Our Farm. Join Us on a Journey from Seed to Harvest, and Discover the Joy and Nourishment of Farm-to-Plate Living.',
-    image: 'https://drive.google.com/uc?export=download&id=1JjYJ8YFqOSoEzdVB0piYzc0HTBB6OzqG',
+    image: 'https://lh5.googleusercontent.com/p/AF1QipMXCZ0NM5YyHX0I88gt2Sl5dRx0nr5o38KI_Eky=w1040-h350-n-k-no',
     detail: {
         items: [
             {
                 id: '1',
-                title: 'Boneless Bangus',
+                title: 'La Guerta',
                 images: [
-                    'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
-                ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
-            {
-                id: '2',
-                title: 'Boneless Kroepeck',
-                images: [
-                    'https://drive.google.com/uc?export=view&id=1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ',
-                ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
-            {
-                id: '3',
-                title: 'Milkfish in Corn Oil',
-                images: [
-                    'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
-                ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
-            {
-                id: '4',
-                title: 'Smoked Bangus (Marinated and Plain)',
-                images: [
-                    'https://drive.google.com/uc?export=view&id=1UiGmss9RDlDSfr3lBGbISG96fNvQbscP',
+                    'https://lh5.googleusercontent.com/p/AF1QipMXCZ0NM5YyHX0I88gt2Sl5dRx0nr5o38KI_Eky=w1040-h350-n-k-no',
                 ],
                 description:
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',

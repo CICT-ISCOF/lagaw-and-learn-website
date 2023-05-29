@@ -8,36 +8,15 @@ export const FISHERIES_AND_MARINE_MUSEUM = {
         items: [
             {
                 id: '1',
-                title: 'Boneless Bangus',
+                title: 'The Virtual Museum',
+                video: 'https://drive.google.com/file/d/1ZuvtKpx-aqaw0qTIZpMQnKet9TfmIBO0/view?usp=share_link',
                 images: [
-                    'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
-                ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
-            {
-                id: '2',
-                title: 'Boneless Kroepeck',
-                images: [
-                    'https://drive.google.com/uc?export=view&id=1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ',
-                ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
-            {
-                id: '3',
-                title: 'Milkfish in Corn Oil',
-                images: [
-                    'https://drive.google.com/uc?export=view&id=1InE4P0MTS6u94MtAV4icZh51bAn8ABKp',
-                ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
-            {
-                id: '4',
-                title: 'Smoked Bangus (Marinated and Plain)',
-                images: [
-                    'https://drive.google.com/uc?export=view&id=1UiGmss9RDlDSfr3lBGbISG96fNvQbscP',
+                    'https://drive.google.com/file/d/1UJjb6FhYkZNowsKW1LGd5TIa37bQVRwh/view?usp=share_link',
+                    'https://drive.google.com/file/d/1jIofIMLeN0cDIG7uTUpmDmdR0oeRCND2/view?usp=share_link',
+                    'https://drive.google.com/file/d/1bJqf9dpuIvjz0hHDPyTZtqI0WR44QWJ6/view?usp=share_link',
+                    'https://drive.google.com/file/d/1LPu34AW5ECXP7d4pgosld_fVYL3IENIH/view?usp=share_link',
+                    'https://drive.google.com/file/d/1GUgCzd27VdcjuPw-K1_N-mMy-vQViVrL/view?usp=share_link',
+                    'https://drive.google.com/file/d/1vA0iJ_p1rEff5WIELc8Cuo2vNa4wiLr4/view?usp=share_link',
                 ],
                 description:
                     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',

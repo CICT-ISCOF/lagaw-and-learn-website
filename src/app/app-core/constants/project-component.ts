@@ -7,9 +7,9 @@ import {LA_GUERTA} from './project-components/la-guerta'
 export const PROJECT_COMPONENTS: ProjectComponent[] = [
     FISH_FARMING,
 
-    // FISH_PROCESSING,
+    FISH_PROCESSING,
 
-    // FISHERIES_AND_MARINE_MUSEUM,
+    FISHERIES_AND_MARINE_MUSEUM,
 
-    // LA_GUERTA,
+    LA_GUERTA,
 ]
