@@ -1,0 +1,7 @@
+<media-viewer
+    stopPropagation
+    *ngIf="mediaViewerOpened$ | async"
+    (click)="mediaViewerOpened$.next(false)"
+    class="fixed flex w-screen h-screen backdrop-blur-lg"
+    style="z-index: 999999; background: rgba(150, 150, 150, 0.79)"
+></media-viewer>

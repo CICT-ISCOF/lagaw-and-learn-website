@@ -1,0 +1,27 @@
+<div
+    (click)="close()"
+    stop-propagation
+    class="fixed flex items-center justify-center w-full h-screen py-20 animate__faster"
+>
+    <div
+        (click)="close()"
+        stop-propagation
+        role="button"
+        class="absolute text-white top-5 right-5"
+    >
+        <i class="text-4xl bi bi-x-lg"></i>
+    </div>
+
+    <div
+        animateJs
+        class="flex items-center justify-center w-full max-w-screen-md max-h-max"
+    >
+        <img
+            @zoomIn
+            style="max-height: 90vh"
+            [src]="imageSource$ | async"
+            class="h-full"
+            alt=""
+        />
+    </div>
+</div>
