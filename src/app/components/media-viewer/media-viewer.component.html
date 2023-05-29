@@ -1,7 +1,7 @@
 <div
     (click)="close()"
     stop-propagation
-    class="fixed flex items-center justify-center w-full h-screen py-20 animate__faster"
+    class="fixed flex items-center justify-center w-full h-screen py-20 animate__faster md:px-10"
 >
     <div
         (click)="close()"
@@ -14,13 +14,13 @@
 
     <div
         animateJs
-        class="flex items-center justify-center w-full max-w-screen-md max-h-max"
+        class="flex items-center justify-center w-full max-w-screen-2xl max-h-max"
     >
         <img
             @zoomIn
             style="max-height: 90vh"
             [src]="imageSource$ | async | drive_link"
-            class="h-full"
+            class="object-contain h-full"
             alt=""
         />
     </div>

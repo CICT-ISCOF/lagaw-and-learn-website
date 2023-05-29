@@ -27,7 +27,7 @@
                 *ngFor="let image of projectSubComponentComponent.images"
             >
                 <img
-                    class="w-full h-[250px] rounded-md"
+                    class="w-full h-[250px] rounded-md object-cover"
                     [src]="image | drive_link"
                     alt=""
                 />
