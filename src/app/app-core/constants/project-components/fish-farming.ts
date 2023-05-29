@@ -2,7 +2,7 @@ export const FISH_FARMING = {
     id: '1',
     title: 'Fish Processing',
     description:
-        "From Catch to Table: Expert Tips and Techniques for Maximizing Freshness, Quality, and Flavor in Your Fish Processing, Whether You're a Commercial Fisherman, Home Cook, or Seafood Enthusiast",
+        'Capacity building in fisheries Edu-tourism aims to promote sustainable fishing practices, raise awareness about marine conservation, and create economic opportunities for local communities. The program prioritizes the empowerment of local stakeholders, specifically focusing on sustainable milkfish production, as an excellent initiative of ISUFST to promote both school-based education and community-based tourism in Western Visayas.',
     image: 'https://drive.google.com/uc?export=download&id=1Uz6R862hWGtPtTqM7gIt80IlWqJ_LhEA',
     detail: {
         items: [

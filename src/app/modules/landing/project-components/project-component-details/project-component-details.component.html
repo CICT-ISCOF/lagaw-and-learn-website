@@ -1,6 +1,4 @@
-<div
-    class="flex flex-col items-center justify-center p-5 py-20 bg-brand-sky/10"
->
+<div class="flex flex-col items-center justify-center p-5 py-20">
     <div
         *ngIf="projectComponent as project"
         class="w-full max-w-screen-xl mx-auto"
@@ -23,14 +21,6 @@
             Your browser does not support the video tag.
         </video> -->
 
-        <div class="my-4 text-3xl font-bold text-left">
-            {{ project.title }}
-        </div>
-
-        <div class="mt-4 text-lg font-light text-left text-gray-500">
-            {{ project.description }}
-        </div>
-
         <div
             *ngIf="project.detail"
             class="grid w-full max-w-screen-xl mx-auto mt-10 md:grid-cols-2 gap-15"
@@ -44,7 +34,7 @@
                     '/sub-detail/' +
                     item.id
                 "
-                class="shadow-2xl shadow-brand-sky/40 bg-white rounded-2xl min-h-[50vh] flex flex-col p-5"
+                class="border border-gray-100 bg-white rounded-2xl min-h-[50vh] flex flex-col p-5"
             >
                 <img
                     class="w-full h-[400px] object-cover rounded-xl"
@@ -62,5 +52,17 @@
                 </div>
             </div>
         </div>
+
+        <div class="my-4 mt-20 text-3xl font-bold text-left">
+            {{ project.title }}
+        </div>
+
+        <div class="my-4 text-lg font-light text-left">
+            {{ project.description }}
+        </div>
+
+        <project-components-fish-processing
+            *ngIf="project.id === '1'"
+        ></project-components-fish-processing>
     </div>
 </div>

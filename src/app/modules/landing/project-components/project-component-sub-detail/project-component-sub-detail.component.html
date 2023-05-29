@@ -1,10 +1,7 @@
-<div
-    *ngIf="projectSubComponentComponent"
-    class="flex w-full p-5 py-20 bg-brand-sky/10"
->
+<div *ngIf="projectSubComponentComponent" class="flex w-full p-5 py-20">
     <div class="flex flex-col w-full max-w-screen-lg mx-auto">
         <ng-container *ngIf="projectSubComponentComponent.video">
-            <div class="text-3xl font-bold text-left">
+            <div class="text-3xl text-left">
                 Video of {{ projectSubComponentComponent.title }}
             </div>
 
@@ -18,7 +15,7 @@
             </div>
         </ng-container>
 
-        <div class="my-4 mt-20 text-3xl font-bold text-left">
+        <div class="my-4 mt-20 text-3xl text-left">
             Images of {{ projectSubComponentComponent.title }}
         </div>
 
@@ -26,7 +23,7 @@
             <div
                 role="button"
                 (click)="openViewer(image)"
-                class="overflow-hidden bg-white rounded-lg shadow-2xl shadow-brand-sky/40"
+                class="overflow-hidden bg-white border rounded-lg border-gray-50"
                 *ngFor="let image of projectSubComponentComponent.images"
             >
                 <img
