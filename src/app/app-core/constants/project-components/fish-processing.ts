@@ -10,7 +10,7 @@ export const FISH_PROCESSING = {
                 id: '1',
                 title: 'Pond Preparation',
                 images: [
-                    'https://drive.google.com/uc?export=view&id=19h_vRLglnDjVksBeRGavveMkG6_WuDfQ',
+                    'https://drive.google.com/uc?export=view&id=1VBIeRPSCPhAI876Yfi5MXGF7WvTG4Ztz',
                     'https://drive.google.com/uc?export=view&id=1h9NHMcMRtunWvRlwZ1hVPuzLlShfhgdZ',
                     'https://drive.google.com/uc?export=view&id=1UGNbdIJJUmLrOMCyLaG2XmJpeDN055zY',
                     'https://drive.google.com/uc?export=view&id=16Pms_Hhx1W-3j51OLNoMttKhPEKKdvcv',

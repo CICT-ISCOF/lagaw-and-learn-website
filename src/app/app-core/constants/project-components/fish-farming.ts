@@ -66,7 +66,6 @@ export const FISH_FARMING = {
                     'https://drive.google.com/file/d/1gV4Uhhh69TduGKvgXBfL3cAURV-VOkJ1/view?usp=share_link',
                     'https://drive.google.com/file/d/1DSGPdqS13SbvBjo6-RyId5bsN6Y4WDVR/view?usp=share_link',
                     'https://drive.google.com/file/d/1OUbGt668HuzdtH3ZE0G2gc9BWBiUvagS/view?usp=share_link',
-                    'https://drive.google.com/file/d/1OUbGt668HuzdtH3ZE0G2gc9BWBiUvagS/view?usp=share_link',
                     'https://drive.google.com/file/d/1InE4P0MTS6u94MtAV4icZh51bAn8ABKp/view?usp=share_link',
                 ],
                 description:
