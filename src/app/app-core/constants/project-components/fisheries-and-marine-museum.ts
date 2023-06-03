@@ -2,7 +2,7 @@ export const FISHERIES_AND_MARINE_MUSEUM = {
     id: '3',
     title: 'Fisheries and Marine Science Virtual Museum',
     description:
-        'Step into a World of Wonder and Discovery: Experience the Fascinating Intersection of History, Science, and Art Through Our Interactive Exhibits, Collections, and Programs, Designed to Educate, Engage, and Inspire Visitors of All Ages and Backgrounds.',
+        'Fisheries Museum of ISUFST is an excellent destination for those interested in learning about the diversity of aquatic life in the Philippines and the importance of conservation and sustainable management of aquatic resources. With its interactive exhibits, hands-on activities, and educational programs, the museum serves as an important resource for research, education, and public outreach.',
     image: 'https://drive.google.com/uc?export=download&id=1g1mJxHfJ2_DQoseZe6pj6P9mqN4xOX4N',
     detail: {
         items: [

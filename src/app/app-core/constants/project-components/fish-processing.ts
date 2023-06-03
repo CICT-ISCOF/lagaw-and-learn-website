@@ -2,7 +2,7 @@ export const FISH_PROCESSING = {
     id: '2',
     title: 'Fish Farming',
     description:
-        "From Seed to Harvest: Discover the Latest Trends and Best Practices in Aquaculture to Produce High-Quality Fish in a Sustainable, Profitable, and Environmentally Responsible Manner, Whether You're a Commercial Fish Farmer, Researcher, or Aquaculture Enthusiast.",
+        "Capacity building in fisheries Edu-tourism aims to promote sustainable fishing practices, raise awareness about marine conservation, and create economic opportunities for local communities. The program prioritizes the empowerment of local stakeholders, specifically focusing on sustainable milkfish production, as an excellent initiative of ISUFST to promote both school-based education and community-based tourism in Western Visayas.",
     image: 'https://drive.google.com/uc?export=download&id=1TCw5hRntiE0pKVKu17nawBx6mbEuxCDu',
     detail: {
         items: [

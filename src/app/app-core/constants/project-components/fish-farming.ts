@@ -2,7 +2,7 @@ export const FISH_FARMING = {
     id: '1',
     title: 'Fish Processing',
     description:
-        'Capacity building in fisheries Edu-tourism aims to promote sustainable fishing practices, raise awareness about marine conservation, and create economic opportunities for local communities. The program prioritizes the empowerment of local stakeholders, specifically focusing on sustainable milkfish production, as an excellent initiative of ISUFST to promote both school-based education and community-based tourism in Western Visayas.',
+        "The engagement of ISUFST with local communities to increase their knowledge about sustainable fish processing practices, the significance of fisheries management, and the potential career prospects within this field is indicative of the university`s dedication to the community. The university`s specialised program in Fisheries is effectively promoted through its emphasis on fish processing, establishment of robust industry partnerships, provision of hands-on training and research prospects, and consistent demonstration of the program`s impact and success",
     image: 'https://drive.google.com/uc?export=download&id=1Uz6R862hWGtPtTqM7gIt80IlWqJ_LhEA',
     detail: {
         items: [
