@@ -15,9 +15,7 @@ export const FISH_PROCESSING = {
                     'https://drive.google.com/uc?export=view&id=1UGNbdIJJUmLrOMCyLaG2XmJpeDN055zY',
                     'https://drive.google.com/uc?export=view&id=16Pms_Hhx1W-3j51OLNoMttKhPEKKdvcv',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
-            },
+            },   
 
             {
                 id: '2',
@@ -31,8 +29,7 @@ export const FISH_PROCESSING = {
                     'https://drive.google.com/uc?export=view&id=1jAR86SUz8bvt-xAO10Vh4FSsFTZji4D1',
                     'https://drive.google.com/uc?export=view&id=1nVjsR6MqJ-2cGUNIc26aQe0uff9rff0A',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
 
             {
@@ -48,8 +45,7 @@ export const FISH_PROCESSING = {
                     'https://drive.google.com/uc?export=view&id=1KnOP6vxF8kEM9nh7BisimuPsyMIBN6vt',
                     'https://drive.google.com/uc?export=view&id=1tkt0dqjM_9er-9n4mxz5lkQfLCxHX3O5',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
         ],
     },

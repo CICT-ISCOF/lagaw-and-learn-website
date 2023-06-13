@@ -13,8 +13,7 @@ export const LA_GUERTA = {
                 images: [
                     'https://lh5.googleusercontent.com/p/AF1QipMXCZ0NM5YyHX0I88gt2Sl5dRx0nr5o38KI_Eky=w1040-h350-n-k-no',
                 ],
-                description:
-                    'Lorem ipsum dlor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
         ],
     },

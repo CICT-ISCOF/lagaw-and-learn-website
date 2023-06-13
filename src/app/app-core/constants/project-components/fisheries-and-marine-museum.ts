@@ -18,8 +18,7 @@ export const FISHERIES_AND_MARINE_MUSEUM = {
                     'https://drive.google.com/file/d/1GUgCzd27VdcjuPw-K1_N-mMy-vQViVrL/view?usp=share_link',
                     'https://drive.google.com/file/d/1vA0iJ_p1rEff5WIELc8Cuo2vNa4wiLr4/view?usp=share_link',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
         ],
     },

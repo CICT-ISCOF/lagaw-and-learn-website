@@ -19,20 +19,18 @@ export const FISH_FARMING = {
                     'https://drive.google.com/file/d/1ZJGsM7bym-Uj_wvLfA0tCDadkgBJ0cHV/view?usp=share_link',
                     'https://drive.google.com/file/d/19h_vRLglnDjVksBeRGavveMkG6_WuDfQ/view?usp=share_link',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
 
             {
                 id: '2',
-                title: 'Boneless Kroepeck',
+                title: 'Bangus Kroepeck',
                 video: 'https://drive.google.com/file/d/1tAeIQWdV5pAQD5yUyxxtNwdeKKju6oUZ/view?usp=share_link',
                 images: [
                     'https://drive.google.com/file/d/1jmIhDmGPqEpSKC9sYN0TtJ98KByHPCLv/view?usp=share_link',
                     'https://drive.google.com/file/d/1tGsV8TXK6dNC1bV_hkejO8cBAFEzC8hC/view?usp=share_link',
                     'https://drive.google.com/file/d/1QGK0miNBlv4K169h7I5AoKaHrMUhe2D8/view?usp=share_link',
                     'https://drive.google.com/file/d/1-uq9qWqpuaXIROYZ2JpwD1yjtjrLHKYU/view?usp=share_link',
-                    'https://drive.google.com/file/d/1xo_sJ-7I-k24CPPmZq9q_3agFdA3h8Wh/view?usp=share_link',
                     'https://drive.google.com/file/d/1b8Sh7zHb12wRJ8XLzGkXaPAkzq3nz-fQ/view?usp=share_link',
                     'https://drive.google.com/file/d/1YVVJoKnnoR__JDjPFBR23cIgtNwOyKT2/view?usp=share_link',
                     'https://drive.google.com/file/d/1_A8Y4hF0lKiK36t6StMygBoL8FG75wAM/view?usp=share_link',
@@ -40,8 +38,7 @@ export const FISH_FARMING = {
                     'https://drive.google.com/file/d/18WGsGar0FMzpQ48ELA8P_hxOYADCGxWZ/view?usp=share_link',
                     'https://drive.google.com/file/d/1MTDCvtlPGFDBj2kAtKKr9KYcM3MZGGyQ/view?usp=share_link',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
 
             {
@@ -68,8 +65,7 @@ export const FISH_FARMING = {
                     'https://drive.google.com/file/d/1OUbGt668HuzdtH3ZE0G2gc9BWBiUvagS/view?usp=share_link',
                     'https://drive.google.com/file/d/1InE4P0MTS6u94MtAV4icZh51bAn8ABKp/view?usp=share_link',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
 
             {
@@ -90,8 +86,7 @@ export const FISH_FARMING = {
                     'https://drive.google.com/file/d/1_sKdz6P-pnu17LZRobv9VhImEeup9koJ/view?usp=share_link',
                     'https://drive.google.com/file/d/1UiGmss9RDlDSfr3lBGbISG96fNvQbscP/view?usp=share_link',
                 ],
-                description:
-                    'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ipsa repellat sunt molestias rem odio repudiandae possimus totam iusto laudantium nostrum cumque suscipit assumenda, aliquam perferendis vero velit recusandae! Excepturi!',
+                
             },
         ],
     },
