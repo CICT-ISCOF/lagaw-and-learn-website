@@ -9,7 +9,7 @@ export const FISHERIES_AND_MARINE_MUSEUM = {
             {
                 id: '1',
                 title: 'The Virtual Museum',
-                video: 'https://drive.google.com/file/d/1ZuvtKpx-aqaw0qTIZpMQnKet9TfmIBO0/view?usp=share_link',
+                video: 'https://drive.google.com/uc?id=1sSPhss7GYWJHVSShwukgz1rVUHD-gUak',
                 images: [
                     'https://drive.google.com/uc?id=1NJjf1TJfleyAzo4y3RNfFrKdztia6EYA',
                     'https://drive.google.com/uc?id=1gImmmWSRTb7ocGbGiZ7EKJb8wjvSEdiM',
