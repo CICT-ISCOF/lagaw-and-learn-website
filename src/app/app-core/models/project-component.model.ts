@@ -1,19 +1,10 @@
-export interface ProjectComponent {
-    id: string
+import {NodeBaseModel} from '@digital_brand_work/models/core.model'
+import {ProjectComponentDetail} from './project-component-detail.model'
+
+export interface ProjectComponent extends NodeBaseModel {
     title: string
     description: string
     image?: string
     video?: string
-    detail?: Detail
-}
-
-export interface Detail {
-    videoTeaser?: string
-    items: {
-        id: string
-        video?: string
-        title?: string
-        images?: string[]
-        description?: string
-    }[]
+    detail?: ProjectComponentDetail
 }

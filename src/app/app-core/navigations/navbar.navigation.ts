@@ -4,6 +4,7 @@ export const NAVBAR_NAVIGATION: NavbarNavigation[] = [
     {link: 'project-components', title: 'Project Components'},
     {link: 'news-and-updates', title: 'News & Updates'},
     {link: 'contact-us', title: 'Contact Us'},
+    {link: 'auth/sign-in', title: 'Sign-in'},
 ]
 
 export interface NavbarNavigation {

@@ -4,12 +4,18 @@ import {NoAuthGuard} from 'app/core/auth/guards/noAuth.guard'
 import {LayoutComponent} from 'app/layout/layout.component'
 import {InitialDataResolver} from 'app/app.resolvers'
 import {MAIN_ROUTING} from './app-core/routes/_main.routing'
+import {AUTH_ROUTING} from './app-core/routes/auth.routing'
+import {ADMIN_ROUTING} from './app-core/routes/admin.routing'
 
 // @formatter:off
 /* eslint-disable max-len */
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 export const appRoutes: Route[] = [
     ...MAIN_ROUTING,
+
+    AUTH_ROUTING,
+
+    ADMIN_ROUTING,
 
     // // Redirect empty path to '/example'
     // {path: '', pathMatch : 'full', redirectTo: 'example'},
@@ -21,22 +27,7 @@ export const appRoutes: Route[] = [
     // // location. This is a small convenience to keep all main routes together here on this file.
     // {path: 'signed-in-redirect', pathMatch : 'full', redirectTo: 'example'},
 
-    // // Auth routes for guests
-    // {
-    //     path: '',
-    //     canMatch: [NoAuthGuard],
-    //     component: LayoutComponent,
-    //     data: {
-    //         layout: 'empty'
-    //     },
-    //     children: [
-    //         {path: 'confirmation-required', loadChildren: () => import('app/modules/auth/confirmation-required/confirmation-required.module').then(m => m.AuthConfirmationRequiredModule)},
-    //         {path: 'forgot-password', loadChildren: () => import('app/modules/auth/forgot-password/forgot-password.module').then(m => m.AuthForgotPasswordModule)},
-    //         {path: 'reset-password', loadChildren: () => import('app/modules/auth/reset-password/reset-password.module').then(m => m.AuthResetPasswordModule)},
-    //         {path: 'sign-in', loadChildren: () => import('app/modules/auth/sign-in/sign-in.module').then(m => m.AuthSignInModule)},
-    //         {path: 'sign-up', loadChildren: () => import('app/modules/auth/sign-up/sign-up.module').then(m => m.AuthSignUpModule)}
-    //     ]
-    // },
+    // Auth routes for guests
 
     // // Auth routes for authenticated users
     // {
@@ -64,16 +55,5 @@ export const appRoutes: Route[] = [
     //     ]
     // },
 
-    // // Admin routes
-    // {
-    //     path: '',
-    //     canMatch: [AuthGuard],
-    //     component: LayoutComponent,
-    //     resolve: {
-    //         initialData: InitialDataResolver,
-    //     },
-    //     children: [
-    //         {path: 'example', loadChildren: () => import('app/modules/admin/example/example.module').then(m => m.ExampleModule)},
-    //     ]
-    // }
+    // Admin routes
 ]
