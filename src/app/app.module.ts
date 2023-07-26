@@ -14,7 +14,8 @@ import {appRoutes} from 'app/app.routing'
 import {StoreModule} from '@ngrx/store'
 import {StoreDevtoolsModule} from '@ngrx/store-devtools'
 import {EffectsModule} from '@ngrx/effects'
-import {SharedModule} from './shared/shared.module'
+import {SharedModule} from './shared/shared.module';
+import { AdminFaqListComponent } from './modules/admin/admin-faq-list/admin-faq-list.component'
 
 const routerConfig: ExtraOptions = {
     preloadingStrategy: PreloadAllModules,
@@ -40,7 +41,7 @@ const modules = [
 ]
 
 @NgModule({
-    declarations: [...components],
+    declarations: [...components, AdminFaqListComponent],
     imports: [...modules],
     bootstrap: [AppComponent],
 })

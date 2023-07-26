@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AdminSliderComponent } from './admin-slider.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    AdminSliderComponent
+  ],
   imports: [
     CommonModule
   ]
