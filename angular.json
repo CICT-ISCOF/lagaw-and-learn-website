@@ -7,11 +7,11 @@
             "projectType": "application",
             "schematics": {
                 "@ngrx/schematics:component": {
-                    "styleext": "scss",
+                    "styleext": "none",
                     "skipTests": true
                 },
                 "@schematics/angular:component": {
-                    "style": "scss",
+                    "style": "none",
                     "skipTests": true
                 },
                 "@schematics/angular:class": {
@@ -148,6 +148,6 @@
         }
     },
     "cli": {
-      "analytics": "05e6ea8d-1ca1-4941-a3f6-2762935b6bea"
+        "analytics": "05e6ea8d-1ca1-4941-a3f6-2762935b6bea"
     }
 }
