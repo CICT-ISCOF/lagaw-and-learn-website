@@ -413,7 +413,7 @@
         .mat-form-field-wrapper {
             /* Border color */
             .mat-form-field-flex {
-                @apply border-brand-sky border-2 dark:border-blue-500 #{'!important'};
+                @apply ring-brand-blue border-2 dark:border-blue-500 #{'!important'};
             }
         }
     }
@@ -689,8 +689,7 @@
                         margin-top: 0;
                         backface-visibility: hidden;
                         transition: none;
-                        font-weight: bold;
-                        @apply text-black text-lg mb-2 #{'!important'};
+                        @apply text-gray-700 text-lg mb-2 #{'!important'};
                     }
                 }
             }
@@ -1374,9 +1373,9 @@ textarea.mat-input-element {
 }
 
 .mat-option.mat-active {
-    @apply text-brand-sky;
+    @apply text-brand-blue;
 }
 
 .mat-option:hover:not(.mat-option-disabled) {
-    @apply text-white bg-brand-sky;
+    @apply text-white bg-brand-blue;
 }

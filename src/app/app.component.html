@@ -9,7 +9,7 @@
 
 <modal></modal>
 
-<div class="flex flex-col w-full">
+<div *ngIf="!isInAdmin" class="flex flex-col w-full">
     <ng-container *ngIf="breakpoint$ | async as breakpoint">
         <navbar
             *ngIf="
@@ -28,3 +28,5 @@
 
     <footer class="w-full"></footer>
 </div>
+
+<router-outlet *ngIf="isInAdmin"></router-outlet>

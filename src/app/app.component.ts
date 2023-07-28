@@ -1,12 +1,13 @@
 import {Store, select} from '@ngrx/store'
 import {AppState} from 'app/app-core/store/core/app.state'
 import {Component, HostListener} from '@angular/core'
-import {Router} from '@angular/router'
 import {MediaService} from '@digital_brand_work/utilities/media.service'
 import {fromEvent, map, merge, of} from 'rxjs'
 import {TransformEntity} from '@digital_brand_work/helpers/transform-entity'
 import {StoreAction} from './app-core/store/core/action.enum'
 import {StateEnum} from './app-core/store/core/state.enum'
+import {takeUntilDestroyed} from '@angular/core/rxjs-interop'
+import {Router} from '@angular/router'
 
 @Component({
     selector: 'app-root',
@@ -18,7 +19,13 @@ export class AppComponent {
         private _router: Router,
         private _store: Store<AppState>,
         private _mediaService: MediaService,
-    ) {}
+    ) {
+        this._router.events.pipe(takeUntilDestroyed()).subscribe(() => {
+            this.isInAdmin =
+                this._router.url.includes('admin') ||
+                this._router.url.includes('auth')
+        })
+    }
 
     @HostListener('window:resize')
     onResize() {
@@ -36,6 +43,8 @@ export class AppComponent {
         select(StateEnum.ALERTS),
         map((x) => new TransformEntity(x).toArray()),
     )
+
+    isInAdmin: boolean = false
 
     ngOnInit(): void {
         this.checkNetworkStatus()

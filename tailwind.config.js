@@ -100,7 +100,7 @@ const config = {
             },
             colors: {
                 gray: colors.slate,
-                'brand-orange': '#EE6D13',
+                'brand-orange': '#F79B15',
                 'brand-yellow': '#FEC624',
                 'brand-sky': '#07C9FE',
                 'brand-blue': '#166AD3',
