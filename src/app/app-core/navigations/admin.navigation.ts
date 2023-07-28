@@ -53,7 +53,7 @@ export const ADMIN_NAVIGATION: FuseNavigationItem[] = [
         id: '1',
         title: 'Footer',
         type: 'basic',
-        icon: 'question_answer',
+        icon: 'square_foot',
         link: '/admin/footer-logo',
     },
 
