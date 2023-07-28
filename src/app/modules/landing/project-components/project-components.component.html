@@ -1,72 +1,49 @@
 <div class="flex flex-col items-center justify-center py-20 md:bg-brand-sky/10">
-    <div class="text-3xl font-semibold text-center">Program Components</div>
+    <div class="text-3xl font-semibold text-center md:text-6xl">
+        Program Components
+    </div>
 
     <div class="text-lg font-light text-gray-500">
         The program has ({{ PROJECT_COMPONENTS.length }}) components: component.
     </div>
 
     <div
-        class="grid w-full max-w-screen-xl mx-auto mt-10 md:grid-cols-2 md:gap-15"
+        class="grid items-baseline justify-start max-w-screen-lg gap-4 mx-auto mt-10 md:grid-cols-2"
     >
+        <!-- Top section for odd indices -->
         <div
-            role="button"
-            *ngFor="let project of PROJECT_COMPONENTS; let j = index"
-            [routerLink]="'/project-components/' + project.id"
-            class="md:shadow-2xl md:shadow-brand-sky/40 bg-white md:rounded-2xl min-h-[50vh] flex flex-col p-5 md:hover:shadow-brand-sky/60 border-b md:border-b-0 border-gray-100"
+            [@listAnimation]="PROJECT_COMPONENTS.length / 2"
+            class="grid items-baseline justify-start gap-4"
         >
-            <video
-                muted
-                loop
-                autoplay
-                *ngIf="project.video"
-                class="w-full h-[400px] bg-black"
+            <ng-container
+                *ngFor="let project of PROJECT_COMPONENTS; let i = index"
             >
-                <source [src]="project.video" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
-
-            <div class="grid grid-cols-2 gap-3">
-                <ng-container *ngIf="j !== 2">
-                    <ng-container
-                        *ngFor="let item of project.detail.items; let i = index"
-                    >
-                        <img
-                            [ngClass]="{
-                                'col-span-2': (j === 1 && i === 2) || j == 3,
-                                'h-[320px] ': j == 3
-                            }"
-                            *ngIf="i < 4"
-                            class="w-full h-[150px] object-cover"
-                            [src]="item.images[0] | drive_link"
-                            alt=""
-                        />
-                    </ng-container>
+                <ng-container *ngIf="i === 0 || i % 2 === 0">
+                    <project-component-item
+                        [key]="i"
+                        class="h-auto max-w-full"
+                        [project]="project"
+                    ></project-component-item>
                 </ng-container>
+            </ng-container>
+        </div>
 
-                <ng-container *ngIf="j === 2">
-                    <ng-container
-                        *ngFor="
-                            let image of project.detail.items[0].images;
-                            let i = index
-                        "
-                    >
-                        <img
-                            *ngIf="i < 4"
-                            class="w-full h-[150px] object-cover"
-                            [src]="image | drive_link"
-                            alt=""
-                        />
-                    </ng-container>
+        <!-- Bottom section for even indices -->
+        <div
+            [@listAnimation]="PROJECT_COMPONENTS.length / 2"
+            class="grid items-baseline justify-start gap-4"
+        >
+            <ng-container
+                *ngFor="let project of PROJECT_COMPONENTS; let i = index"
+            >
+                <ng-container *ngIf="i % 2 !== 0 && i !== 0">
+                    <project-component-item
+                        [key]="i"
+                        class="h-auto max-w-full"
+                        [project]="project"
+                    ></project-component-item>
                 </ng-container>
-            </div>
-
-            <div class="my-4 text-3xl font-bold text-left">
-                {{ project.title }}
-            </div>
-
-            <div class="mt-4 text-lg font-light text-left text-gray-500">
-                {{ project.description }}
-            </div>
+            </ng-container>
         </div>
     </div>
 </div>

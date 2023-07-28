@@ -5,8 +5,8 @@ import {SliderState, sliderAdapter} from './slider.reducer'
 
 const feature = (state: AppState) => state.slider
 
-export const userLoaders = createSelector(feature, (state: SliderState) =>
+export const sliderLoaders = createSelector(feature, (state: SliderState) =>
     getStoreLoaders(state),
 )
 
-export const usersBaseSelectors = sliderAdapter.getSelectors()
+export const sliderBaseSelectors = sliderAdapter.getSelectors()

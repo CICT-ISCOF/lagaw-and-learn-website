@@ -3,7 +3,7 @@ import {FormBuilder, Validators} from '@angular/forms'
 import {Slider} from 'app/app-core/models/slider.model'
 
 @Injectable({providedIn: 'root'})
-export class SlideForm extends FormBuilder {
+export class SliderForm extends FormBuilder {
     get() {
         return this.group({
             headline: ['', Validators.required],

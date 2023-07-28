@@ -7,6 +7,8 @@ import {NavbarComponent} from 'app/components/common/navbar/navbar.component'
 import {ModalHeaderComponent} from 'app/components/headers/modal-header/modal-header.component'
 import {RouteHeaderComponent} from 'app/components/headers/route-header/route-header.component'
 import {MediaViewerComponent} from 'app/components/media-viewer/media-viewer.component'
+import {ProjectComponentItemComponent} from 'app/components/project-component-item/project-component-item.component'
+import {SliderComponent} from 'app/components/slider/slider.component'
 import {ModalComponent} from 'app/modules/modal/modal.component'
 
 export const sharedComponents = [
@@ -22,4 +24,7 @@ export const sharedComponents = [
     RouteHeaderComponent,
     ButtonTitleComponent,
     AppSpinnerComponent,
+    ProjectComponentItemComponent,
+
+    SliderComponent,
 ]
