@@ -1,3 +1,7 @@
+import {LoadingStateEnum} from '@digital_brand_work/states/store/enums/loading-state.enum'
+import {LoadingTypeEnum} from '@digital_brand_work/states/store/enums/loading-type.enum'
+import dayjs from 'dayjs'
+
 export interface PHPBaseModel {
     id?: string
     created_at?: string
@@ -92,9 +96,28 @@ export type NodeFile =
           url: string
       }
 
+export interface LoadingState {
+    state: LoadingStateEnum
+    type: LoadingTypeEnum
+}
+
 export interface Alert {
     id?: string
     title: string
     message: string
     type: 'success' | 'info' | 'error'
+}
+
+export function timeStamps(
+    date: any = undefined,
+    type: 'update' | 'create' = 'create',
+) {
+    const data = {createdAt: dayjs().add(1, 'day').toJSON()}
+
+    if (type === 'update' && date) {
+        data['updatedAt'] = dayjs().add(1, 'day').toJSON()
+        data['createdAt'] = dayjs(date).toJSON()
+    }
+
+    return data
 }

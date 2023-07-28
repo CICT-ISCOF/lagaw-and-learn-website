@@ -4,5 +4,5 @@ export interface Slider extends NodeBaseModel {
     headline: string
     sub_headline: string
     button_title: string
-    pictures: PHPFile
+    pictures: PHPFile[]
 }
