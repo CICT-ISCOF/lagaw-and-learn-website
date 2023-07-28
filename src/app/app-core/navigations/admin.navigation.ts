@@ -75,7 +75,7 @@ export const ADMIN_NAVIGATION: FuseNavigationItem[] = [
 
     {
         id: '1',
-        title: 'Project Component',
+        title: 'Project Components',
         type: 'basic',
         icon: 'houseboat',
         link: '/admin/project-components',
