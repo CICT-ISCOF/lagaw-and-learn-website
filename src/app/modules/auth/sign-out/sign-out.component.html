@@ -1,31 +1,39 @@
-<div class="flex flex-col flex-auto items-center sm:justify-center min-w-0">
-    <div class="w-full sm:w-auto py-8 px-4 sm:p-12 sm:rounded-2xl sm:shadow sm:bg-card">
-        <div class="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
+<div
+    class="flex flex-col items-center flex-auto min-w-0 sm:justify-center bg-brand-sky/5"
+>
+    <div class="w-full px-4 py-8 sm:w-auto sm:p-12 sm:bg-card">
+        <div class="w-full mx-auto max-w-80 sm:w-80 sm:mx-0">
             <!-- Logo -->
             <div class="w-12 mx-auto">
-                <img src="assets/images/logo/logo.svg">
+                <img
+                    class="object-contain scale-[3]"
+                    src="https://drive.google.com/uc?id=1eLJq_L2eqBnxozEJ-4F7_BPxuvnRTgQ0"
+                />
             </div>
 
-            <!-- Title -->
-            <div class="mt-8 text-4xl font-extrabold tracking-tight leading-tight text-center">You have signed out!</div>
+            <div
+                class="mt-4 text-4xl font-extrabold leading-tight tracking-tight text-center"
+            >
+                You have signed out!
+            </div>
             <div class="flex justify-center mt-0.5 font-medium">
-                <!-- Redirect countdown -->
                 <ng-container *ngIf="countdown > 0">
-                    Redirecting in {{countdown | i18nPlural: countdownMapping }}
+                    Redirecting in
+                    {{ countdown | i18nPlural : countdownMapping }}
                 </ng-container>
 
-                <!-- Redirect message -->
                 <ng-container *ngIf="countdown === 0">
                     You are now being redirected!
                 </ng-container>
             </div>
 
             <!-- Form footer -->
-            <div class="mt-8 text-md font-medium text-secondary text-center">
+            <div class="mt-8 font-medium text-center text-md text-secondary">
                 <span>Go to</span>
                 <a
-                    class="ml-1 text-primary-500 hover:underline"
-                    [routerLink]="['/sign-in']">sign in
+                    class="ml-1 text-brand-blue hover:underline"
+                    [routerLink]="['/auth/sign-in']"
+                    >sign in
                 </a>
             </div>
         </div>

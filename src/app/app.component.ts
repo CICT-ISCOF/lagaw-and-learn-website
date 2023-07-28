@@ -23,7 +23,8 @@ export class AppComponent {
         this._router.events.pipe(takeUntilDestroyed()).subscribe(() => {
             this.isInAdmin =
                 this._router.url.includes('admin') ||
-                this._router.url.includes('auth')
+                this._router.url.includes('auth') ||
+                this._router.url.includes('session')
         })
     }
 

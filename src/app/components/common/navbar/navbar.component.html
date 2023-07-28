@@ -32,14 +32,14 @@
         <ul class="flex items-center ml-auto">
             <li
                 [ngClass]="{
-                    'pointer-events-none text-white bg-brand-sky':
+                    'pointer-events-none text-white bg-brand-blue':
                         currentNav === nav,
-                    'hover:bg-brand-sky/10': currentNav !== nav
+                    'hover:bg-brand-sky/30': currentNav !== nav
                 }"
                 (click)="currentNav = nav"
                 role="button"
                 [routerLink]="nav.link"
-                class="px-5 py-2 mx-2 rounded-md"
+                class="px-5 py-2.5 mx-1 rounded-full"
                 *ngFor="let nav of NAVBAR_NAVIGATION; trackBy: trackByFn"
             >
                 {{ nav.title }}
