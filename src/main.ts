@@ -8,6 +8,7 @@ AOS.init({
     placement: 'bottom-bottom',
     delay: 100,
 })
+
 platformBrowserDynamic()
     .bootstrapModule(AppModule)
     .catch((err) => console.error(err))

@@ -1,8 +1,5 @@
 import {Route} from '@angular/router'
-import {AuthGuard} from 'app/core/auth/guards/auth.guard'
-import {NoAuthGuard} from 'app/core/auth/guards/noAuth.guard'
 import {LayoutComponent} from 'app/layout/layout.component'
-import {InitialDataResolver} from 'app/app.resolvers'
 import {MAIN_ROUTING} from './app-core/routes/_main.routing'
 import {AUTH_ROUTING} from './app-core/routes/auth.routing'
 import {ADMIN_ROUTING} from './app-core/routes/admin.routing'
@@ -14,7 +11,7 @@ export const appRoutes: Route[] = [
     {
         path: 'signed-in-redirect',
         pathMatch: 'full',
-        redirectTo: 'admin/example',
+        redirectTo: 'admin/home',
     },
 
     ...MAIN_ROUTING,

@@ -1,15 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AdminAboutUsComponent } from './admin-about-us.component';
-
-
+import {NgModule} from '@angular/core'
+import {AdminAboutUsComponent} from './admin-about-us.component'
+import {SharedModule} from 'app/shared/shared.module'
+import {RouterModule} from '@angular/router'
 
 @NgModule({
-  declarations: [
-    AdminAboutUsComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [AdminAboutUsComponent],
+    imports: [
+        SharedModule,
+        RouterModule.forChild([{path: '', component: AdminAboutUsComponent}]),
+    ],
 })
-export class AdminAboutUsModule { }
+export class AdminAboutUsModule {}

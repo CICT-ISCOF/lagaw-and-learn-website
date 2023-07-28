@@ -1,15 +1,13 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { AdminSliderComponent } from './admin-slider.component';
-
-
+import {NgModule} from '@angular/core'
+import {AdminSliderComponent} from './admin-slider.component'
+import {SharedModule} from 'app/shared/shared.module'
+import {RouterModule} from '@angular/router'
 
 @NgModule({
-  declarations: [
-    AdminSliderComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+    declarations: [AdminSliderComponent],
+    imports: [
+        SharedModule,
+        RouterModule.forChild([{path: '', component: AdminSliderComponent}]),
+    ],
 })
-export class AdminSliderModule { }
+export class AdminSliderModule {}

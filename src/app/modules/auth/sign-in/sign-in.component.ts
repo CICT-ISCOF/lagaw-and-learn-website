@@ -81,9 +81,7 @@ export class AuthSignInComponent implements OnInit {
                     'redirectURL',
                 ) || '/signed-in-redirect'
 
-                this._router.navigate(['admin/example'])
-
-                // this._router.navigate(['/admin/example'])
+                this._router.navigate(['admin/home'])
             },
             (response) => {
                 // Re-enable the form

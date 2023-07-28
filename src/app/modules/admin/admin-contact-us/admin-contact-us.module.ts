@@ -6,6 +6,9 @@ import {AdminContactUsListComponent} from './admin-contact-us-list/admin-contact
 
 @NgModule({
     declarations: [AdminContactUsComponent, AdminContactUsListComponent],
-    imports: [SharedModule, RouterModule.forChild([])],
+    imports: [
+        SharedModule,
+        RouterModule.forChild([{path: '', component: AdminContactUsComponent}]),
+    ],
 })
 export class AdminContactUsModule {}
